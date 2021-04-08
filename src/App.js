@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './components/login'
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{padding:'0'}}>
+      <Container style={{ backgroundColor: '#7ed126', height: '200px',width:'100%'}}>
+      
+       <Login />
+      </Container>
+      
+      </div>
+     
     </div>
   );
 }
 
 export default App;
+
