@@ -6,8 +6,11 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import LoginCard from './loginCard'
-import SignUpCard from './signUpCard'
+import LoginCard from '../components/loginCard'
+import SignUpCard from '../components/signUpCard'
+import Container from '@material-ui/core/Container';
+import logo from '../img/logo.png'
+import CloseIcon from '@material-ui/icons/Close';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -64,6 +67,11 @@ export default function TabsWrappedLabel() {
   };
 
   return (
+    <div style={{padding:'0'}}>
+      
+    <Container style={{ backgroundColor: '#7ed126', height: '200px',width:'100%'}}>
+    <CloseIcon style={{position: 'absolute',top:' 8px',left: '16px'}}/>
+    <img src={logo} style={{width:'15%',marginTop:'5%'}}></img>
     <div className={classes.root}>
       <AppBar position="static">
         <center>
@@ -92,5 +100,9 @@ export default function TabsWrappedLabel() {
         <SignUpCard/>
       </TabPanel>
     </div>
+    </Container>
+      
+      </div>
+     
   );
 }
