@@ -36,8 +36,9 @@ export default function RecipeReviewCard() {
           or
           <TextField id="standard-basic" style={{width:'100px'}}/>
       </CardContent>
-        <CardContent>
+        
         <TextField label="Mobile Number(10 digit) " style={{width:'300px'}}/>
+        <CardContent>
         <Button size="large" style={{backgroundColor:'#fc357b',paddingRight:'20%',paddingLeft:'20%',marginTop:'10%',color:'white'}}>
           SignUp Using OTP
         </Button>

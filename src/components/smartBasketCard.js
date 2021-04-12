@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import SearchIcon from '@material-ui/icons/Search';
 import MainPageGrid from './mainPageGrid'
+import Grid from "@material-ui/core/Grid";
 import ProductCard from './productCard'
 import product1 from '../img/product1.webp'
 import product2 from '../img/product2.webp'
@@ -55,11 +56,21 @@ export default function ButtonAppBar() {
    <MainPageGrid/>
    <Typography style={{ fontSize: "15px",margin:'1%',fontWeight:'bold' }}>Our Recommendation For You</Typography>
    <Typography style={{ fontSize: "10px",margin:'1%'}}>Based on  what customers like you have bought</Typography>
-   <ProductCard image={product1} name="Onion"/>
-   <ProductCard image={product2}  name="Potato - New"/>
-   <ProductCard image={product3} name="Harpic 1ltr"/>
-   <ProductCard image={product4} name="Patanjali Oil"/>
-   <ProductCard image={product5} name="Ashirvaad Aata"/>
+    <Grid container >
+        <Grid item xs={12} lg={4}  >
+        <ProductCard image={product1} name="Onion"/>
+        <ProductCard image={product2}  name="Potato - New"/>
+        </Grid>
+        <Grid item xs={12} lg={4}  >
+        <ProductCard image={product3} name="Harpic 1ltr"/>
+        <ProductCard image={product4} name="Patanjali Oil"/>
+        </Grid>
+        <Grid item xs={12} lg={4}  >
+        <ProductCard image={product5} name="Ashirvaad Aata"/> 
+        <ProductCard image={product1} name="Onion"/>
+        </Grid>
+    </Grid>
+    
     </div>
   );
 }

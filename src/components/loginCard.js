@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 export default function RecipeReviewCard() {
   const classes = useStyles();
   return (
-    <Card className={classes.root}>
+    <Card>
       <CardContent>
       <FacebookIcon style={{margin:'5%'}}/>
       <ShopIcon style={{margin:'5%'}} />

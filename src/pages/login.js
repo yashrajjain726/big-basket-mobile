@@ -69,9 +69,9 @@ export default function TabsWrappedLabel() {
   return (
     <div style={{padding:'0'}}>
       
-    <Container style={{ backgroundColor: '#7ed126', height: '200px',width:'100%'}}>
+    <Container style={{ backgroundColor: '#7ed126', height: '200px',width:'100%',margin:'0',maxWidth:'100%'}}>
     <CloseIcon style={{position: 'absolute',top:' 8px',left: '16px'}}/>
-    <img src={logo} style={{width:'15%',marginTop:'5%'}}></img>
+    <img src={logo} style={{width:'6em',marginTop:'5%'}}></img>
     <div className={classes.root}>
       <AppBar position="static">
         <center>
