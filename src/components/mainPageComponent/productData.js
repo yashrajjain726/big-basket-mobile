@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import { makeStyles } from "@material-ui/core/styles";
-import { useState } from "react";
 import { Typography } from "@material-ui/core";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
@@ -20,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function ProductData(props) {
   const classes = useStyles();
-  const [setIndex] = useState(0);
   return (
     <div>
       <Card style={{ width: "100%" }}>
@@ -29,10 +27,6 @@ export default function ProductData(props) {
             <img src={props.image}></img>
           </Card>
         </center>
-        {/* <Card.Title
-          style={{ fontSize: "15px", textAlign: "left", marginLeft: "2%" }}>
-          {props.title}
-        </Card.Title> */}
         <div style={{textAlign:'left',margin:'1%'}}>
             <span style={{fontWeight:'bold',color:"#A0A0A0"}}>FRESHO</span>
             <div >Mtr - Hing</div>

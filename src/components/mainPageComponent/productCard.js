@@ -1,13 +1,10 @@
-import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
-import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
 import GridList from "@material-ui/core/GridList";
 import { useState } from "react";
-
-import Grid from '@material-ui/core/Grid';
 import ProductData from './productData'
-import product1 from '../../img/product1.webp'
 import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@material-ui/core/styles';
+import product1 from '../../img/product1.webp'
 import product2 from '../../img/product2.webp'
 import product3 from '../../img/product3.webp'
 import product4 from '../../img/product4.webp'
