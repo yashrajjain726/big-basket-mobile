@@ -34,7 +34,7 @@ export default function ProductCard() {
       <Typography style={{ fontSize: "25px" }}>My Smart Basket</Typography>
       <hr></hr>
 
-      {/* <GridList className={classes.gridList}> */}
+  
        
           <Grid container style={{height:'100%'}}>
             <Grid xs={6} lg={3} md={3}>
@@ -65,9 +65,7 @@ export default function ProductCard() {
               <ProductData image={product3}/> 
           </Grid>
           </Grid>
-          
-      
-      {/* </GridList> */}
+
     </div>
   );
 }

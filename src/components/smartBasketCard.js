@@ -57,18 +57,19 @@ export default function ButtonAppBar() {
    <Typography style={{ fontSize: "15px",margin:'1%',fontWeight:'bold' }}>Our Recommendation For You</Typography>
    <Typography style={{ fontSize: "10px",margin:'1%'}}>Based on  what customers like you have bought</Typography>
     <Grid container >
-        <Grid item xs={12} lg={4}  >
+        <Grid item xs={12} lg={4} md={6} >
         <ProductCard image={product1} name="Onion"/>
         <ProductCard image={product2}  name="Potato - New"/>
         </Grid>
-        <Grid item xs={12} lg={4}  >
+        <Grid item xs={12} lg={4}  md={6}  >
         <ProductCard image={product3} name="Harpic 1ltr"/>
         <ProductCard image={product4} name="Patanjali Oil"/>
         </Grid>
-        <Grid item xs={12} lg={4}  >
+        <Grid item xs={12} lg={4}  md={6}  >
         <ProductCard image={product5} name="Ashirvaad Aata"/> 
         <ProductCard image={product1} name="Onion"/>
         </Grid>
+        
     </Grid>
     
     </div>
