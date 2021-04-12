@@ -38,42 +38,34 @@ export default function AutoGrid() {
                  <hr></hr>
         </center>
     <Grid container  >
-      <Grid item xs={3} md={2} lg={3}className={classes.cardsize}>
+      <Grid item xs={6} md={3} lg={3}className={classes.cardsize}>
         <Paper className={classes.root} elevation={0}>
-        <CardActionArea>
+       
         <img className={classes.img} src={popular1}/>
-        </CardActionArea>
         </Paper>
       </Grid>
-      <Grid item xs={3} md={2} lg={3}>
+      <Grid item xs={6} md={3} lg={3}>
       <Paper className={classes.root} elevation={0}>
-        <CardActionArea>
+
 
        
         <img className={classes.img} src={popular2}/>
-
-        </CardActionArea>
         </Paper>
       </Grid>
-      <Grid item xs={3} md={2} lg={3}>
+      <Grid item xs={6} md={3} lg={3}>
       <Paper className={classes.root} elevation={0}>
-        <CardActionArea>
+
 
 
         <img className={classes.img} src={popular3}/>
-
-        </CardActionArea>
         </Paper>
       </Grid>
-      <Grid item xs={3} md={2} lg={3}>
+      <Grid item xs={6} md={3} lg={3}>
       <Paper className={classes.root} elevation={0}>
-        <CardActionArea>
+
 
 
         <img className={classes.img} src={popular4}/>
-
-
-        </CardActionArea>
         </Paper>
         
       </Grid>

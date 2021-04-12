@@ -23,65 +23,71 @@ export default function ProductData(props) {
   const [setIndex] = useState(0);
   return (
     <div>
-            <Card style={{width:'100%'}}>
-            <center>
-              <Card.Img variant="top" src={props.image} style={{margin:'5%',width:'50%'}} />
-            </center>
-            <Card.Title style={{ fontSize: "15px",textAlign:'left',marginLeft:'2%' }}>{props.title}</Card.Title>
-            <Card style={{margin:'5%'}}>
-              <FormControl className={classes.margin}>
-                <InputLabel
-                  htmlFor="demo-customized-select-native"
-                  style={{ fontSize: "70%" }}
-                >
-                  50g - Rs 72.00
-                </InputLabel>
-                <NativeSelect id="demo-customized-select-native">
-                  <option aria-label="None" value="" />
-                  <option value={10}>Ten</option>
-                  <option value={20}>Twenty</option>
-                  <option value={30}>Thirty</option>
-                </NativeSelect>
-              </FormControl>
-
-              <Card.Body style={{backgroundColor:'#d9d9d9'}}>
-                <div>
-                  <div style={{textAlign:'left'}}>
-                    <span style={{fontSize:'10px'}}>MRP <strike>  RS 20 </strike> </span>  Rs. 14.85
-                    <div style={{fontSize:'10px'}}>
-                    <p>Standard Delivery. Tommorrow
-                    <p>7:30Am - 9:30PM</p></p>
-                    </div>
-                  </div>
-                  <InputGroup size="sm" className="mb-3">
-                    <InputGroup.Prepend style={{height:'55% !important',display: 'flex',justifyContent: 'space-between',flexWrap: 'wrap'}}>
-                     <div style={{display:'flex',justifyContent:'space-around',marginBottom:'5%',}}>
-                     <InputGroup.Text
-                        id="inputGroup-sizing-sm"
-                        style={{ fontSize: "9px",height:'20px'}}
-                      >
-                        Qty
-                      </InputGroup.Text>
-                      <input 
-                        variant="outlined"
-                        style={{ padding: "0", width: "15px ",padding:'0',height:'20px',marginRight:'5%'}}
-                      />
-                     </div>
-                     
-                        <Button
-                          variant="contained"
-                          style={{height:'20px',width:'5px', backgroundColor: "#FCD12A"}}
-                        >
-                          <Typography style={{fontSize:'9px'}}>
-                            Add
-                          </Typography>
-                        </Button>
-                    </InputGroup.Prepend>
-                  </InputGroup>
-                </div>
-              </Card.Body>
-            </Card>
+      <Card style={{ width: "100%" }}>
+        <center>
+          <Card>
+            <img src={props.image}></img>
           </Card>
-          </div>
+        </center>
+        {/* <Card.Title
+          style={{ fontSize: "15px", textAlign: "left", marginLeft: "2%" }}>
+          {props.title}
+        </Card.Title> */}
+        <div style={{textAlign:'left',margin:'1%'}}>
+            <span style={{fontWeight:'bold',color:"#A0A0A0"}}>FRESHO</span>
+            <div >Mtr - Hing</div>
+            </div>
+        <Card>
+          <FormControl className={classes.margin}>
+            <InputLabel
+              htmlFor="demo-customized-select-native"
+              style={{ fontSize: "70%" }}
+            >
+              50g - Rs 72.00
+            </InputLabel>
+            <NativeSelect id="demo-customized-select-native">
+              <option aria-label="None" value="" />
+              <option value={10}>Ten</option>
+              <option value={20}>Twenty</option>
+              <option value={30}>Thirty</option>
+            </NativeSelect>
+          </FormControl>
+
+          <Card.Body>
+            <div>
+              <div style={{ textAlign: "left" }}>
+                <span style={{ fontSize: "10px" }}>
+                  <strike> RS 20 </strike>{" "}
+                </span>
+                <span style={{ fontSize: "10px" }}>Rs.14.85</span>
+              </div>
+              <InputGroup size="sm" className="mb-3">
+                <InputGroup.Prepend
+                  style={{
+                    height: "55% !important",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    flexWrap: "wrap",
+                  }}
+                >
+                 
+                </InputGroup.Prepend>
+              </InputGroup>
+            </div>
+          </Card.Body>
+        </Card>
+       <center>
+       <Card>
+        <Button
+                    variant="contained"
+                    style={{
+                      backgroundColor: "#fc1e4b",
+                    }}>
+                    <Typography style={{ fontSize: "9px",color:'#ffffff'}}>Add</Typography>
+                  </Button>
+        </Card>
+       </center>
+      </Card>
+    </div>
   );
 }
