@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     padding:0,
     elevation:'0 !important',
     marginTop:'5%',
-    marginBottom:'5%',
     
     
   },
@@ -34,8 +33,8 @@ export default function SingleLineGridList() {
      <center>
      <GridList className={classes.gridList} >
         {OfferData.map((tile) => (
-            <Container key={tile.img} style={{elevation:'0',width:'100%'}} >
-           <img src={tile.img} alt={tile.title} style={{marginTop:'5%',marginBottom:'3%'}}/>
+            <Container key={tile.img} style={{elevation:'0',width:'100%',height:'max-content',marginBottom:'7%'}} >
+           <img src={tile.img} alt={tile.title} style={{marginTop:'5%'}}/>
             <Typography style={{color:'black'}}>
                 {tile.title}
             </Typography>

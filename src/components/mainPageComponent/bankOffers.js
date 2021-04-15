@@ -13,7 +13,7 @@ import bankOffer4 from '../../img/bankOffer4.webp'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    elevation:0,
+    margin:'5%'
 
 
   },
@@ -39,28 +39,28 @@ export default function AutoGrid() {
         </center>
     <Grid container  >
       <Grid item xs={12} md={3} lg={3} className={classes.cardsize}>
-        <Paper className={classes.root} elevation={0}>
-        <img className={classes.img} src={bankOffer1}style={{marginBottom:'10%',margin:'5%'}}/>
+        <Paper className={classes.root} elevation={3}>
+        <img className={classes.img} src={bankOffer1}style={{marginBottom:'10%',}}/>
 
 
         </Paper>
       </Grid>
       <Grid item xs={12} md={3} lg={3}>
-      <Paper className={classes.root} elevation={0}>
-        <img className={classes.img} src={bankOffer2}style={{marginBottom:'10%',margin:'5%'}}/>
+      <Paper className={classes.root} elevation={3} >
+        <img className={classes.img} src={bankOffer2}style={{marginBottom:'10%',}}/>
         </Paper>
       </Grid>
       <Grid item xs={12} md={3} lg={3}>
-      <Paper className={classes.root} elevation={0}>
+      <Paper className={classes.root} elevation={3}>
      
-        <img className={classes.img} src={bankOffer3}style={{marginBottom:'10%',margin:'5%'}}/>
+        <img className={classes.img} src={bankOffer3}style={{marginBottom:'10%'}}/>
 
     
         </Paper>
       </Grid>
       <Grid item xs={12} md={3} lg={3}>
-      <Paper className={classes.root} elevation={0}>
-        <img className={classes.img} src={bankOffer4} style={{marginBottom:'10%',margin:'5%'}}/>
+      <Paper className={classes.root} elevation={3}>
+        <img className={classes.img} src={bankOffer4} style={{marginBottom:'10%'}}/>
         </Paper>
         
       </Grid>

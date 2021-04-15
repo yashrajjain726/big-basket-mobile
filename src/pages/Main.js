@@ -26,6 +26,7 @@ class Main extends Component {
                 <LowerBanner/> 
                 <BankOffer/>
                 <Typography style={{ fontSize: "25px" }}>My Smart Basket</Typography>
+                
                 <ProductCard/> 
                 <Popular/>
                 <Section/>

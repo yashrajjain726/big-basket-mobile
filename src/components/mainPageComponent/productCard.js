@@ -43,7 +43,9 @@ export default function ProductCard() {
   };
   return (
     <div>
+      <hr></hr>
           <div className={classes.root}>
+            
            <GridList className={classes.gridList}>
             <Paper elevation={3} style={{margin:'2%',height:'max-content'}}>
                  <ProductData image={product1}/>  
