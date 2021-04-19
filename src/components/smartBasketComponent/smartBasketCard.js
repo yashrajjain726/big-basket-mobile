@@ -10,11 +10,11 @@ import SearchIcon from '@material-ui/icons/Search';
 import MainPageGrid from './mainPageGrid'
 import Grid from "@material-ui/core/Grid";
 import ProductCard from './productCard'
-import product1 from '../img/product1.webp'
-import product2 from '../img/product2.webp'
-import product3 from '../img/product3.webp'
-import product4 from '../img/product4.webp'
-import product5 from '../img/product5.webp'
+import product1 from '../../img/product1.webp'
+import product2 from '../../img/product2.webp'
+import product3 from '../../img/product3.webp'
+import product4 from '../../img/product4.webp'
+import product5 from '../../img/product5.webp'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,6 +58,8 @@ export default function ButtonAppBar() {
    <Typography style={{ fontSize: "10px",margin:'1%'}}>Based on  what customers like you have bought</Typography>
     <Grid container >
         <Grid item xs={12} lg={4} md={6} >
+
+        
         <ProductCard image={product1} name="Onion"/>
         <ProductCard image={product2}  name="Potato - New"/>
         </Grid>

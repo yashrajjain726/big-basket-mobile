@@ -6,8 +6,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import LoginCard from '../components/loginCard'
-import SignUpCard from '../components/signUpCard'
+import LoginCard from '../components/loginSignUpComponent/loginCard'
+import SignUpCard from '../components/loginSignUpComponent/signUpCard'
 import Container from '@material-ui/core/Container';
 import logo from '../img/logo.png'
 import CloseIcon from '@material-ui/icons/Close';

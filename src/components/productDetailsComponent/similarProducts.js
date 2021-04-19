@@ -1,6 +1,6 @@
 import React from "react";
 import GridList from "@material-ui/core/GridList";
-import ProductData from './productData'
+import ProductData from '../mainPageComponent/productData'
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import product1 from '../../img/product1.webp'
@@ -37,7 +37,7 @@ export default function ProductCard() {
   const classes = useStyles();
   return (
     <div>
-      <hr></hr>
+
           <div className={classes.root}>
             
            <GridList className={classes.gridList}>

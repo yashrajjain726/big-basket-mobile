@@ -41,7 +41,7 @@ export default function MediaControlCard(props) {
     setAge(event.target.value);
   };
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} >
       <CardMedia className={classes.cover} image={props.image} />
       <div style={{marginLeft:'5%'}}>
         <div style={{textAlign:'left'}}>
