@@ -5,6 +5,8 @@ import DescriptionCard from '../components/productDetailsComponent/descriptionCa
 import Buttons from '../components/productDetailsComponent/buttons'
 import WouldView from '../components/productDetailsComponent/wouldView';
 
+import Recipies from './../components/productDetailsComponent/receipes';
+
 class ProductDetails extends Component {
     state = {  }
     render() { 
@@ -15,6 +17,7 @@ class ProductDetails extends Component {
             <DescriptionCard/>
             <Buttons/>
             <WouldView/>
+            <Recipies/>
 
             </div>
          );
